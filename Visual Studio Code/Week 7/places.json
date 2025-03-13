@@ -1,0 +1,20 @@
+[{
+    "name": "Whiterun", 
+    "location": "Center of Skyrim"
+}, 
+{
+    "name": "Windhelm", 
+    "location": "Northeast"
+}, 
+{
+    "name": "Markarth", 
+    "location": "Southwest"
+}, 
+{
+    "name": "Solitude", 
+    "location": "Northwest"
+}, 
+{
+    "name": "Riften", 
+    "location": "Southeast"
+}]
