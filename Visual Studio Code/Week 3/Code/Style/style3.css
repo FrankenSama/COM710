@@ -1,3 +1,11 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: img src="C:\Users\5silvo66\OneDrive - Solent University\OneDrive - Southampton Solent University\Term 2\Web Technologies (COM710)\COM710\Visual Studio Code\Week 3\Assets\banner.jpg";
+    color: white;
+    font-size: 30px;
+  }
+
 /** paragraph style**/
 /*#firstpara{
     display: in;
