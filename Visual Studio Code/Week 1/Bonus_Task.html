@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Timetable</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        th, td { border: 1px solid #000; padding: 16px; text-align: center; vertical-align: middle; }
+        th { font-weight: bold; background-color: #f9f9f9; }
+        .session { font-weight: bold; }
+    </style>
+</head>
+<body class="flex justify-center py-10 bg-gray-100">
+    <table class="border-collapse">
+        <tr>
+            <th></th>
+            <th>9-10</th>
+            <th>10-11</th>
+            <th>11-12</th>
+            <th>12-13</th>
+            <th>13-14</th>
+            <th>14-15</th>
+            <th>15-16</th>
+            <th>16-17</th>
+        </tr>
+        <tr><th>Monday</th><td colspan="8"></td></tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="2" class="bg-gray-100">
+                <div class="session">Module 1</div>
+                <div>Session 1</div>
+            </td>
+            <td colspan="1"></td>
+            <td colspan="2" class="bg-gray-100">
+                <div class="session">Module 1</div>
+                <div>Session 2</div>
+            </td>
+            <td colspan="3"></td>
+        </tr>
+        <tr><th>Wednesday</th><td colspan="8"></td></tr>
+        <tr>
+            <th>Thursday</th>
+            <td colspan="4"></td>
+            <td colspan="1" class="bg-gray-100">
+                <div class="session">Web Technologies</div>
+                <div>Lecture</div>
+            </td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td colspan="4"></td>
+            <td colspan="2" class="bg-gray-100">
+                <div class="session">Web Technologies</div>
+                <div>Lab</div>
+            </td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>
