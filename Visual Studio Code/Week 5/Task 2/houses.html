@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Houses </title>
+    <link rel="stylesheet" href="housesstyle.css">
+</head>
+<body>
+    <!-- Banner Section -->
+    <header class="banner">
+        <h1>Welcome to Hogwarts</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#">Home Page</a>
+        <a href="#">Browse</a>
+        <a href="#">About</a>
+        <a href="#">Houses</a>
+        <a href="#">Example Page 2</a>
+    </nav>
+    <main>
+        <h2>Our Houses</h2>
+        <p>Answer the questions below to see how your answer matches our houses.</p>
+
+        <!-- Question 1 (visible by default) -->
+        <div id="question1">
+            <p>You hear of a MASSIVE spider! It's the size of a car! What do you do?</p>
+            <button id="q1-option1">Ignore all my fears and walk right in to it's den for a chat!</button>
+            <button id="q1-option2">I probably won't look for that den!</button>
+        </div>
+
+        <!-- Question 2 (hidden initially) -->
+        <div id="question2" style="display: none;">
+            <p>How many Harry Potters does it take to screw in a light bulb?</p>
+            <button id="q2-option1">One, he just holds it and the WHOLE world revolves around him</button>
+            <button id="q2-option2">That other answer is neither nice or accurate</button>
+        </div>
+
+        <!-- Question 3 (hidden initially) -->
+        <div id="question3" style="display: none;">
+            <p>A supervillian has told everyone that they will be spared if they join the evil army:</p>
+            <button id="q3-option1">I will weigh up the pros and cons of each possibility</button>
+            <button id="q3-option2">I'm unlikely to join an evil army</button>
+        </div>
+
+        <!-- Result (hidden initially) -->
+        <h3 id="result" style="display: none;"></h3>
+    </main>
+
+    <footer>
+        <p>Version: 1.0</p>
+    </footer>
+
+    <script src="housesscript.js"></script>
+</body>
+</html>
