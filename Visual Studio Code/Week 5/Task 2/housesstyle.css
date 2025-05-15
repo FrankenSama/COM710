@@ -212,3 +212,43 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #f0e6ff;
 }
+
+/* Add these to your existing styles.css */
+.resultcontainer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.resultingcontainer, .resultdesc {
+    width: 50%;
+}
+
+.resultingcontainer img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #5d267d;
+}
+
+.resultdesc h3 {
+    color: #5d267d;
+    margin-bottom: 10px;
+}
+
+.resultdesc p {
+    line-height: 1.6;
+}
+
+/* Remove the previous table styles if they conflict */
+table {
+    display: none;
+    }
