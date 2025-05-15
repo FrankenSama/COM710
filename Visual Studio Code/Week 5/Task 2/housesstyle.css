@@ -154,3 +154,61 @@ textarea {
 .invalid {
     border-color: #d63333 !important;
 }
+
+/* Add these to your existing styles.css */
+.filter-buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    background-color: #5d267d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #340e47;
+}
+
+#dataDisplay {
+    margin-top: 20px;
+}
+
+.data-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0e6ff;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #5d267d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f0e6ff;
+}
