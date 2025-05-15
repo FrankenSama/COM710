@@ -90,3 +90,67 @@ footer {
     background-color: #f0e6ff;
     border-radius: 5px;
 }
+
+/* Add these to your existing styles.css */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.radio-group {
+    margin: 0.5rem 0;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #d63333;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.error-summary {
+    color: #d63333;
+    background-color: #ffebeb;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    display: none;
+}
+
+.invalid {
+    border-color: #d63333 !important;
+}
