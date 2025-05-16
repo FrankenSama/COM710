@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  
+  <header>
+  <div class="logo">
+    <h1><img src="assets/logo.png" alt="Recipe Finder"></h1>
+  </div>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="register.html">Register</a>
+  </nav>
+</header>
+
+  <main class="auth-form">
+    <h1>Create an Account</h1>
+    <form id="register-form">
+      <label for="username">Username*</label>
+      <input type="text" id="username" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password*</label>
+      <input type="password" id="password" required minlength="6">
+
+      <label>
+        <input type="checkbox" id="dark-mode-pref"> Enable dark mode
+      </label>
+
+      <button type="submit">Register</button>
+      <p id="form-message"></p>
+    </form>
+  </main>
+
+  <footer>
+  <div class="footer-column">
+    <p>East Park Terrace, Southampton, SO14 0YN</p>
+    <p>Visitors: <span id="visitor-counter">0</span></p>
+  </div>
+  <div class="footer-column">
+    <p id="intro-text">Welcome to our recipe hub!</p>
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+    <div class="footer-column">
+    <p>Follow Us:</p>
+    <div class="social-icons">
+    <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+    <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+    </div>
+  </div>
+</footer>
+
+  <script src="scripts/register.js"></script>
+</body>
+</html>

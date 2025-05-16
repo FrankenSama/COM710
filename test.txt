@@ -1,0 +1,75 @@
+●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Server running on http://localhost:3000".
+
+      48 | app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+      49 |
+    > 50 | const { hashPassword, generateToken, authenticateToken } = require('./auth');
+         |                                ^
+      51 |
+      52 | // Register endpoint
+      53 | app.post('/api/register', async (req, res) => {
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:141:10)
+      at Server.<anonymous> (server.js:50:32)
+      at Server.f (node_modules/once/once.js:25:25)
+
+ FAIL  tests/auth.test.js
+  Auth Endpoints                                                                                                                                      
+    × Register a new user (1 ms)                                                                                                                      
+    × Login with valid credentials                                                                                                                    
+                                                                                                                                                      
+  ● Auth Endpoints › Register a new user                                                                                                              
+                                                                                                                                                      
+    ReferenceError: mongoose is not defined
+
+      2 | module.exports = {
+      3 |   resetDatabase: async () => {
+    > 4 |     await mongoose.connection.db.dropDatabase();
+        |     ^
+      5 |     Object.keys(mongoose.connection.models).forEach(key => {
+      6 |       delete mongoose.connection.models[key];
+      7 |     });
+
+      at resetDatabase (testHelper.js:4:5)
+      at Object.resetDatabase (tests/auth.test.js:7:9)
+
+  ● Auth Endpoints › Login with valid credentials
+
+    ReferenceError: mongoose is not defined
+
+      2 | module.exports = {
+      3 |   resetDatabase: async () => {
+    > 4 |     await mongoose.connection.db.dropDatabase();
+        |     ^
+      5 |     Object.keys(mongoose.connection.models).forEach(key => {
+      6 |       delete mongoose.connection.models[key];
+      7 |     });
+
+      at resetDatabase (testHelper.js:4:5)
+      at Object.resetDatabase (tests/auth.test.js:7:9)
+
+Test Suites: 1 failed, 1 total                                                                                                                        
+Tests:       2 failed, 2 total                                                                                                                        
+Snapshots:   0 total
+Time:        0.88 s
+Ran all test suites.
+Jest did not exit one second after the test run has completed.
+
+'This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Connected".
+
+      15 | db.once('open', function(){
+      16 |     console.log('Connected')
+    > 17 | });
+         |           ^
+      18 |
+      19 | // Define Schemas
+      20 | const User = mongoose.model('User', {
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:141:10)
+      at NativeConnection.<anonymous> (server.js:17:11)
+      at NativeConnection.Object.<anonymous>.Connection.onOpen (node_modules/mongoose/lib/connection.js:1017:8)
+      at _setClient (node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:447:8)
+      at NativeConnection.createClient (node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:338:3)
